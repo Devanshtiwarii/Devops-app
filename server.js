@@ -1,8 +1,3 @@
-const express=require('express');
-const app = express();
-app.get('/',(req,res)=>{
-	console.log("someone hit your home");
-	res.send('Devops pipeline running')
 const express = require('express');
 const app = express();
 
@@ -33,5 +28,4 @@ if (require.main === module) {
 }
 
 // 5. Export the function so your Test file can see it
-module.exports = { add, app };});
-app.listen(3000,()=>{console.log("listening to 3000")});
+module.exports = { add, app };
