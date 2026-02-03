@@ -1,5 +1,7 @@
+const { add } = require('../server'); 
+
 describe('Math Utility - add()', () => {
-  
+
   test('adds positive numbers correctly', () => {
     expect(add(1, 2)).toBe(3);
   });
@@ -9,8 +11,6 @@ describe('Math Utility - add()', () => {
   });
 
   test('returns a number even if strings are passed', () => {
-    // This depends on how you wrote your add function!
-    // If add(a, b) { return Number(a) + Number(b) }
     expect(add("1", "2")).toBe(3);
   });
-}); 
+});

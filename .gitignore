@@ -21,3 +21,4 @@ Thumbs.db
 # IDE settings (Optional)
 .vscode/
 .idea/
+minikube-linux-amd64

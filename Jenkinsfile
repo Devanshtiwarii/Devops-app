@@ -23,6 +23,17 @@ pipeline {
         sh 'docker build -t devops-app .'
       }
     }
-  }
+    stage('Push Image') {
+       steps {
+	sh 'docker push localhost:5000/devops-app:v1'
+	  }
+	}
+    stage('Deploy to Production') {
+        steps {
+   	 sh '~/Devops/scripts/deploy.sh'
+ 	 }
+	}
+
+    }
 }
 
