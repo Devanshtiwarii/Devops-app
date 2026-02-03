@@ -30,7 +30,7 @@ pipeline {
 	}
     stage('Deploy to Production') {
         steps {
-  	  sh '/var/lib/jenkins/Devops/scripts/deploy.sh'
+	 sh './deploy.sh'
  	 }
 	}
 
